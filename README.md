@@ -50,3 +50,24 @@ sequenceDiagram
     WebApp-->>Student: Display Report
 
 ---
+
+## ** Usage Instructions**
+1️⃣ Log in as a Student, Teacher, or Admin.
+2️⃣ View Reports to analyze academic performance.
+3️⃣ Generate Reports (Teachers only).
+4️⃣ Get Study Recommendations based on AI analysis.
+
+---
+
+🔐 Security & Access Control
+Student Access: Can view reports and receive recommendations.
+Teacher Access: Can view, analyze, and generate reports.
+Admin Access: Manages users and controls system settings.
+
+---
+
+## Data Flow diagram 
+Step 1: Student requests a performance report.
+Step 2: Backend retrieves data from the database.
+Step 3: AI model analyzes past trends.
+Step 4: The final report is displayed to the student.

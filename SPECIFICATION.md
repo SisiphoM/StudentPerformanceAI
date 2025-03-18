@@ -30,3 +30,19 @@ The project is feasible due to:
 - Students must have recorded grades & attendance.
 - Schools must integrate their database with the system.
 
+## 🔍 4. System Components & Architecture  
+
+### **4.1 System Overview**  
+- **Frontend:** A React-based web application for user interaction.  
+- **Backend:** A Flask API handling data processing and ML model execution.  
+- **Database:** Stores student data, reports, and login credentials.  
+- **Machine Learning Model:** Predicts student performance trends.  
+
+### **4.2 Component Interactions**  
+```mermaid
+graph TD
+    A[Frontend - Web Dashboard] -->|Sends Request| B[Backend - Flask API]
+    B -->|Fetch Data| C[PostgreSQL Database]
+    B -->|Runs Analysis| D[Machine Learning Model]
+    D -->|Returns Predictions| B
+    B -->|Displays Results| A
