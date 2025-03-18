@@ -5,17 +5,8 @@
 This diagram shows the system's high-level interaction with students, teachers, admin and databases. Click link for Mermaid diagram https://www.mermaidchart.com/app/projects/8e46d07a-e802-4efa-971b-48f52adfb76f/diagrams/b5557db4-f768-488b-b8c7-953e707371d5/version/v0.1/edit
 ![alt text](<Screenshot (18).png>)
 
-This diagram shows the system's high-level interaction with students, teachers, and databases.
-
-```markdown
-```mermaid
-graph TD
-    A[Student] -->|View Performance Report| B[AI-Powered System]
-    B -->|Fetch Data| C[School Database]
-
 ## 2. Container Diagram
 This system consists of three main parts: Frontend, Backend, and Database. https://www.mermaidchart.com/app/projects/8e46d07a-e802-4efa-971b-48f52adfb76f/diagrams/36e12fa6-0a2c-49b5-b2dd-e82c4ff78783/version/v0.1/edit
-
 ![alt text](<Screenshot (19).png>)
 
 ## 3. Use case diagram.
@@ -34,5 +25,4 @@ Backend: Handles API requests and runs AI predictions.
 
 ## 5. Data Flow Diagram
 This is the data flow diagram. https://www.mermaidchart.com/app/projects/954ba711-e390-447d-bc86-64fd8cbd3c14/diagrams/35215afb-e241-41ff-a97b-fcb373a47137/version/v0.1/edit
-
 ![alt text](<Screenshot (21).png>)
