@@ -10,3 +10,4 @@ graph LR
     B -->|Provides Learning Recommendations| A
     B -->|Fetches Data| D[School Database]
 
+## 2. Link to mermaid for Use case diagram https://www.mermaidchart.com/app/projects/8e46d07a-e802-4efa-971b-48f52adfb76f/diagrams/435c2f83-2296-421d-9009-79025061cc94/version/v0.1/edit
