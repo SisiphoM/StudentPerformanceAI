@@ -21,12 +21,11 @@ This system consists of three main parts: Frontend, Backend, and Database. https
 
 ## 3. Use case diagram.
 The diagram below represents interactions between actors (Students, Teachers, admin and database) and the system. https://www.mermaidchart.com/app/projects/8e46d07a-e802-4efa-971b-48f52adfb76f/diagrams/435c2f83-2296-421d-9009-79025061cc94/version/v0.1/edit
-c:\Users\mdaka\OneDrive\Pictures\Screenshots 1\Screenshot (16).png
+![alt text](<Screenshot (16).png>)
 
 ## 4. High-level architecture.
 This is High-level architecture diagram. https://www.mermaidchart.com/app/projects/954ba711-e390-447d-bc86-64fd8cbd3c14/diagrams/90d2154f-58d2-4186-b0e0-d5ba6dde873c/version/v0.1/edit
-
-c:\Users\mdaka\OneDrive\Pictures\Screenshots 1\Screenshot (20).png
+![alt text](<Screenshot (20).png>)
 
 
 AI Model: Analyzes student performance trends.
