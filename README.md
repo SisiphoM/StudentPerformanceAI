@@ -25,4 +25,28 @@ It provides **real-time reports, learning recommendations, and early alerts** fo
 ```bash
 git clone https://github.com/yourusername/StudentPerformanceAI.git
 cd StudentPerformanceAI
+
+---
+
+AI Model: Analyzes student performance trends.
+Database: Stores student records, grades, and attendance.
+Frontend: Web dashboard for students, teachers, and parents.
+Backend: Handles API requests and runs AI predictions.
+
+## System Interaction Flow
+The diagram below shows how different components interact when a student requests a performance report.
+
+```mermaid
+sequenceDiagram
+    participant Student
+    participant WebApp
+    participant Backend
+    participant Database
+    Student->>WebApp: Request Performance Report
+    WebApp->>Backend: Fetch Student Data
+    Backend->>Database: Retrieve Performance Data
+    Database-->>Backend: Data Retrieved
+    Backend-->>WebApp: Process & Return Report
+    WebApp-->>Student: Display Report
+
 ---
