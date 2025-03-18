@@ -26,3 +26,21 @@ Backend: Handles API requests and runs AI predictions.
 ## 5. Data Flow Diagram
 This is the data flow diagram. https://www.mermaidchart.com/app/projects/954ba711-e390-447d-bc86-64fd8cbd3c14/diagrams/35215afb-e241-41ff-a97b-fcb373a47137/version/v0.1/edit
 ![alt text](<Screenshot (21).png>)
+
+## 6. Sequence diagram
+The diagram below shows how different components interact when a student requests a performance report. https://www.mermaidchart.com/app/projects/954ba711-e390-447d-bc86-64fd8cbd3c14/diagrams/b23efe95-b5c5-4a9d-9e55-233e7db55501/version/v0.1/edit
+![alt text](<Screenshot (22).png>)
+
+
+```mermaid
+sequenceDiagram
+    participant Student
+    participant WebApp
+    participant Backend
+    participant Database
+    Student->>WebApp: Request Performance Report
+    WebApp->>Backend: Fetch Student Data
+    Backend->>Database: Retrieve Performance Data
+    Database-->>Backend: Data Retrieved
+    Backend-->>WebApp: Process & Return Report
+    WebApp-->>Student: Display Report
