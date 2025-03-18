@@ -71,3 +71,8 @@ Step 1: Student requests a performance report.
 Step 2: Backend retrieves data from the database.
 Step 3: AI model analyzes past trends.
 Step 4: The final report is displayed to the student.
+
+## Deployment & Setup
+Frontend: React, hosted on Vercel or Netlify.
+Backend: Flask, deployed on AWS EC2 or Heroku.
+Database: PostgreSQL, hosted on AWS RDS.
