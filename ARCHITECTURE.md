@@ -7,12 +7,11 @@ This diagram shows the system's high-level interaction with students, teachers, 
 
 This diagram shows the system's high-level interaction with students, teachers, and databases.
 
+```markdown
 ```mermaid
-graph LR
-    A[Student] -->|Submits Assignments, Tests, Attendance| B[Performance Prediction System]
-    B -->|Generates Reports| C[Teacher]
-    B -->|Provides Learning Recommendations| A
-    B -->|Fetches Data| D[School Database]
+graph TD
+    A[Student] -->|View Performance Report| B[AI-Powered System]
+    B -->|Fetch Data| C[School Database]
 
 ## 2. Container Diagram
 This system consists of three main parts: Frontend, Backend, and Database. https://www.mermaidchart.com/app/projects/8e46d07a-e802-4efa-971b-48f52adfb76f/diagrams/36e12fa6-0a2c-49b5-b2dd-e82c4ff78783/version/v0.1/edit
