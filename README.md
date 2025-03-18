@@ -30,7 +30,7 @@ Backend: Handles API requests and runs AI predictions.
 
 ---
 
-## ** Usage Instructions**
+## Usage Instructions
 1️⃣ Log in as a Student, Teacher, or Admin.
 2️⃣ View Reports to analyze academic performance.
 3️⃣ Generate Reports (Teachers only).
