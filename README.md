@@ -1,10 +1,28 @@
  # AI-Powered Student Performance Prediction System
 
 ## Project Description
-This system predicts student academic performance using AI. It analyzes past grades, attendance records, and study habits to provide early intervention and personalized learning support.
+This system predicts student academic performance using AI. It analyzes past grades, attendance records, and study habits to provide early intervention and personalized learning support. The **AI-Powered Student Performance Prediction System** helps educators and students by analyzing academic data to predict performance trends.  
+It provides **real-time reports, learning recommendations, and early alerts** for students at risk of failing.  
 
 ## Documentation
 - [System Specification](SPECIFICATION.md)
 - [Architecture Documentation](ARCHITECTURE.md)
 
+
+## Key Features  
+**Student Reports** – View detailed academic performance reports.  
+**AI-Based Learning Suggestions** – Personalized study plans for students.  
+**Teacher Dashboard** – Monitor student progress and generate reports.  
+**Parent Portal** – Allows parents to track student performance.  
+**Secure User Access** – Role-based authentication for students, teachers, and admins.  
+**Data Integration** – Connects with school databases to keep records updated.  
+
+---
+
+## 🛠 Installation & Setup  
+
+### **1. Clone the Repository**  
+```bash
+git clone https://github.com/yourusername/StudentPerformanceAI.git
+cd StudentPerformanceAI
 ---
