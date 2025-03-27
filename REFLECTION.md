@@ -29,3 +29,26 @@
 - Clearly defining **preconditions and postconditions** helps structure use cases.  
 - Test cases should be designed **alongside requirements** to ensure full coverage.  
 - **Stakeholder collaboration** ensures all needs are addressed properly.
+
+# Reflection: Challenges in Agile Planning  
+
+### **1. Prioritization Challenges**  
+- Some user stories felt equally important, making MoSCoW prioritization difficult.  
+- Solution: Focused on **core functionalities first** (performance reports, user management).  
+
+### **2. Effort Estimation Issues**  
+- Assigning **story points** was tricky without exact workload details.  
+- Solution: Used the **Fibonacci sequence** for rough estimation.  
+
+### **3. Aligning Agile with Stakeholder Needs**  
+- Balancing **technical complexity vs. user needs** was tough.  
+- Solution: Ensured that **must-have** stories addressed key stakeholder concerns.  
+
+### **4. Planning Dependencies**  
+- Some tasks required system integration before they could be tested.  
+- Solution: Scheduled **integration tasks** early in the sprint.  
+
+### **Lessons Learned**  
+- **Break down large tasks** into smaller, testable increments.  
+- **Use backlog prioritization** to ensure MVP is functional ASAP.  
+- **Plan for dependencies early** to avoid blockers.  

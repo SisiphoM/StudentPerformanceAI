@@ -1,17 +1,102 @@
  # AI-Powered Student Performance Prediction System
 
-## Project Description
-This system predicts student academic performance using AI. It analyzes past grades, attendance records, and study habits to provide early intervention and personalized learning support. The **AI-Powered Student Performance Prediction System** helps educators and students by analyzing academic data to predict performance trends.  
-It provides **real-time reports, learning recommendations, and early alerts** for students at risk of failing.  
+📊 Student Performance Prediction System
+📌 Project Overview
+The Student Performance Prediction System is an AI-powered application designed to analyze student data and predict academic performance. The system helps educators and students identify learning trends, strengths, and areas requiring improvement.
 
-## Installation setup
-On terminal :
-git clone https://github.com/yourusername/StudentPerformanceAI.git
+🚀 Features
+✅ AI-Powered Performance Prediction – Uses machine learning to predict student grades based on historical data.
+✅ Interactive Dashboard – Displays student reports, learning recommendations, and insights.
+✅ Database Integration – Stores and retrieves student academic records securely.
+✅ Role-Based Access – Students, teachers, and administrators have different access levels.
+✅ Learning Recommendations – Provides AI-generated study resources based on performance analysis.
+✅ Data Visualization – Generates performance graphs, trends, and analytics.
+
+🛠️ Tech Stack
+Frontend: React Native
+Backend: Flask (Python)
+Database: SQL
+AI Model: Scikit-Learn / TensorFlow
+Version Control: Git & GitHub
+
+📥 Installation & Setup
+1️⃣ Clone the Repository
+bash
+Copy
+Edit
+git clone https://github.com/SisiphoM/StudentPerformanceAI.git
 cd StudentPerformanceAI
+2️⃣ Set Up Backend
+bash
+Copy
+Edit
+cd backend
+python -m venv env
+source env/bin/activate  # On Windows, use `env\Scripts\activate`
+pip install -r requirements.txt
+python app.py
+3️⃣ Set Up Frontend
+bash
+Copy
+Edit
+cd frontend
+npm install
+npm start
+📌 Usage Guide
+🔹 For Students:
+Log in and view academic performance trends.
+
+Get personalized learning recommendations.
+
+🔹 For Teachers:
+Generate and analyze student performance reports.
+
+Provide academic feedback based on AI predictions.
+
+🔹 For Administrators:
+Manage student records and system access.
+
+Monitor overall academic performance at an institutional level.
+
+📊 System Architecture
+mermaid
+
+graph TD;
+    A[User] -->|Access System| B[Frontend - React Native];
+    B -->|Sends Requests| C[Backend - Flask API];
+    C -->|Fetches Data| D[SQL Database];
+    C -->|Processes Data| E[AI Model - Prediction];
+    E -->|Returns Results| B;
+    D -->|Stores & Retrieves| C;
+
+📌 Project Management (GitHub Issues & Milestones)
+This project follows Agile Development with the following milestones:
+
+1️⃣ Sprint 1: System Setup & UI Development
+
+Implement the initial frontend interface.
+
+Set up the backend and database.
+
+2️⃣ Sprint 2: AI Model Integration & Performance Optimization
+
+Train the machine learning model for predictions.
+
+Optimize system performance for large datasets.
+
+3️⃣ Sprint 3: Testing & Deployment
+
+Conduct user testing and fix issues.
+
+Deploy the application to a cloud server.
+
+
+📧 Contact
+For any inquiries, contact Sisipho Mdaka at [mdakasisipho@gmail.com].
+
 ## Documentation
 - [System Specification](SPECIFICATION.md)
 - [Architecture Documentation](ARCHITECTURE.md)
-
 
 ## Key Features  
 **Student Reports** – View detailed academic performance reports.  
