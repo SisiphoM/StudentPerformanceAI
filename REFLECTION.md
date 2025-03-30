@@ -52,3 +52,56 @@
 - **Break down large tasks** into smaller, testable increments.  
 - **Use backlog prioritization** to ensure MVP is functional ASAP.  
 - **Plan for dependencies early** to avoid blockers.  
+
+
+# Reflection on Using GitHub Projects
+
+## **Challenges Faced**
+
+### **1. Choosing the Right Template**
+Selecting the most suitable Kanban template was a challenge.  
+- Some templates lacked **automation**, requiring **manual updates**.  
+- Others, like **Bug Triage**, were too focused on issue tracking rather than Agile workflows.  
+- **Solution:** We selected the **Automated Kanban** template for its ability to **automate issue progression**, reducing manual effort.
+
+### **2. Customizing the Board**
+Finding the right balance between **simplicity and detail** was tricky.  
+- Too many columns made the board **complicated**, while too few lacked **workflow clarity**.  
+- **Solution:** We added only necessary columns, such as **"Testing"** for QA and **"Blocked"** for dependencies.
+
+### **3. Task Assignment & Traceability**
+Ensuring each issue had a **clear owner and priority** was time-consuming.  
+- Some issues were **misassigned**, leading to confusion.  
+- **Solution:** Used `@mentions` to **assign tasks**, linked **GitHub Issues to the board**, and added **labels for priority tracking**.
+
+---
+
+## **Comparison with Other Tools**
+
+### **GitHub Projects vs. Trello**
+| Feature | GitHub Projects | Trello |
+|---------|----------------|--------|
+| **Integration** | Directly integrates with GitHub Issues | Requires manual linking of issues |
+| **Automation** | Supports **issue tracking automation** | No built-in automation for GitHub Issues |
+| **Best For** | Developers using GitHub | General project tracking |
+
+📌 **Conclusion:** *GitHub Projects is better for developer-focused workflows, while Trello is more flexible for general teams.*
+
+### **GitHub Projects vs. Jira**
+| Feature | GitHub Projects | Jira |
+|---------|----------------|------|
+| **Complexity** | Lightweight and easy to set up | More complex with detailed reporting |
+| **Reporting & Insights** | Basic tracking and automation | Advanced sprint reports, velocity charts |
+| **Best For** | Small to medium teams using GitHub | Large organizations needing **detailed Agile metrics** |
+
+📌 **Conclusion:** *Jira provides more powerful reporting for large teams, but GitHub Projects is simpler and more developer-friendly.*
+
+---
+
+## **Final Thoughts**
+Using **GitHub Projects** significantly improved our workflow by:
+- **Automating task tracking** and reducing manual updates.
+- **Enhancing team collaboration** through clear issue assignments.
+- **Providing an easy-to-use Agile tool** without additional overhead.
+
+Overall, **GitHub Projects** proved to be a **lightweight, developer-friendly alternative** to more complex tools like Jira. 🚀
