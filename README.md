@@ -151,7 +151,7 @@ sequenceDiagram
     Database-->>Backend: Data Retrieved
     Backend-->>WebApp: Process & Return Report
     WebApp-->>Student: Display Report
-
+```
 ---
 
 ## Template comparison 
