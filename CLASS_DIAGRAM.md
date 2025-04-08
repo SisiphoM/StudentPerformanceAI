@@ -1,70 +1,64 @@
+```mermaid
 classDiagram
     class Student {
-        -studentId: String
-        -name: String
-        -email: String
-        -attendanceRecord: Float
-        -GPA: Float
-        +viewPerformance()
+        +int student_id
+        +string name
+        +string email
+        +string gender
+        +int age
+        +float attendance_rate
+        +float[] previous_scores
+        +calculatePerformance()
         +updateProfile()
     }
 
     class Course {
-        -courseId: String
-        -title: String
-        -credits: Int
-        +addStudent()
-        +removeStudent()
-    }
-
-    class Instructor {
-        -instructorId: String
-        -name: String
-        -email: String
-        -department: String
-        +createAssignment()
-        +reviewPerformance()
-    }
-
-    class Assignment {
-        -assignmentId: String
-        -title: String
-        -dueDate: Date
-        -maxScore: Float
-        +submit()
-        +gradeAssignment()
-    }
-
-    class PerformanceRecord {
-        -recordId: String
-        -studentId: String
-        -courseId: String
-        -grade: Float
+        +int course_id
+        +string course_name
+        +int credits
+        +assignStudent()
         +calculateAverage()
     }
 
-    class PredictionModel {
-        -modelId: String
-        -version: String
-        -accuracy: Float
-        -modelType: String
+    class Module {
+        +int module_id
+        +string module_name
+        +float weight
+        +getModuleDetails()
+    }
+
+    class Lecturer {
+        +int lecturer_id
+        +string name
+        +string email
+        +string department
+        +assignMarks()
+        +viewReport()
+    }
+
+    class PerformanceReport {
+        +int report_id
+        +int student_id
+        +float prediction_score
+        +string risk_level
+        +Date generated_on
+        +generateReport()
+        +exportToPDF()
+    }
+
+    class AIModel {
+        +int model_id
+        +string version
+        +float accuracy
+        +string training_data_summary
         +trainModel()
-        +predictPerformance()
+        +predict()
+        +evaluate()
     }
 
-    class Feedback {
-        -feedbackId: String
-        -content: String
-        -date: Date
-        -relatedTo: String
-        +generateFeedback()
-        +editFeedback()
-    }
-
-    Student "1" -- "*" PerformanceRecord : has
-    Course "1" -- "*" PerformanceRecord : contains
-    Student "1" -- "*" Assignment : completes
-    Instructor "1" -- "*" Course : teaches
-    Course "1" -- "*" Assignment : contains
-    Assignment "1" -- "1" Feedback : has
-    PredictionModel "1" -- "*" Student : predictsFor
+    Student --> PerformanceReport : generates
+    Student --> Course : enrolled in
+    Course --> Module : includes
+    Lecturer --> Course : teaches
+    AIModel --> PerformanceReport : used in
+```

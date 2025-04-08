@@ -1,10 +1,34 @@
  # AI-Powered Student Performance Prediction System
 
-📊 Student Performance Prediction System
+ # 📋 Table of Contents
+Installation
+
+Setup & Configuration
+
+Usage Instructions
+
+Project Features
+
+System Specifications
+
+Architecture Overview
+
+Domain Model
+
+Collaboration
+
+Credits
+
+---
+
+# 🎓 Student Performance Prediction System (AI-Powered)
+This project aims to use Artificial Intelligence to predict student academic performance based on historical data. The system provides insights to educators and administrators to identify at-risk students and provide timely interventions.
+
+# 📊 Student Performance Prediction System
 📌 Project Overview
 The Student Performance Prediction System is an AI-powered application designed to analyze student data and predict academic performance. The system helps educators and students identify learning trends, strengths, and areas requiring improvement.
 
-🚀 Features
+# 🚀 Features
 ✅ AI-Powered Performance Prediction – Uses machine learning to predict student grades based on historical data.
 ✅ Interactive Dashboard – Displays student reports, learning recommendations, and insights.
 ✅ Database Integration – Stores and retrieves student academic records securely.
@@ -12,7 +36,7 @@ The Student Performance Prediction System is an AI-powered application designed 
 ✅ Learning Recommendations – Provides AI-generated study resources based on performance analysis.
 ✅ Data Visualization – Generates performance graphs, trends, and analytics.
 
-🛠️ Tech Stack
+# 🛠️ Tech Stack
 Frontend: React Native
 Backend: Flask (Python)
 Database: SQL
