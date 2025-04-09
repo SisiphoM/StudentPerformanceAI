@@ -105,3 +105,17 @@ Using **GitHub Projects** significantly improved our workflow by:
 - **Providing an easy-to-use Agile tool** without additional overhead.
 
 Overall, **GitHub Projects** proved to be a **lightweight, developer-friendly alternative** to more complex tools like Jira. 🚀
+
+# Reflection on Using domain model 
+## Challenges Faced
+One of the main challenges I faced during this assignment was understanding how to accurately translate the system's domain logic into a structured domain model. It required a solid grasp of the relationships between the various entities in the Student Performance Prediction System and how those entities interact. Designing the table to include relevant attributes and methods for each class also took time and thoughtful consideration.
+
+Another challenge was learning and applying the Mermaid syntax to create the class diagram. While it is a powerful tool, making sure the diagram accurately reflected the model without syntax errors involved trial and error.
+
+## What I Learned
+This assignment helped me understand the importance of domain modeling in software engineering. I learned how crucial it is to define clear entities, their properties, and behaviors, which serve as a blueprint for system design. I also improved my skills in using Mermaid to visually represent models, which is an effective way to communicate system structure to stakeholders and developers.
+
+I gained practical experience in balancing abstraction and detail—making sure the model was not too complex but still captured the essential parts of the system.
+
+## Application to My Project
+By completing this domain model, I now have a clear overview of the key components of the Student Performance Prediction System. This will serve as a foundational reference when implementing the backend logic, database schema, and even the AI prediction flow. It also ensures better collaboration with teammates, as everyone can refer to the same structured view of the system.
