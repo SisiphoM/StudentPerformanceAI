@@ -119,3 +119,105 @@ I gained practical experience in balancing abstraction and detail—making sure 
 
 ## Application to My Project
 By completing this domain model, I now have a clear overview of the key components of the Student Performance Prediction System. This will serve as a foundational reference when implementing the backend logic, database schema, and even the AI prediction flow. It also ensures better collaboration with teammates, as everyone can refer to the same structured view of the system.
+
+---
+# Reflection on Service Layer and REST API
+## Module Import Errors:
+
+ModuleNotFoundError: No module named 'repositories.inmemory'
+✅ Solution: Ensure directory structure matches import paths exactly.
+
+## Test Discovery Issues:
+
+Caused by misplaced or improperly named test files.
+
+## VS Code Python Path Issues:
+
+Fixed by setting Python interpreter manually via Ctrl+Shift+P → Python: Select Interpreter.
+
+## Missing .vscode/settings.json:
+
+Resolved by manually configuring interpreter.
+
+## Tests Not Passing:
+
+Not all dependencies/modules were fully integrated. Known and being worked on.
+
+
+## 📚 Learning Journey by Assignment
+
+### Assignment 3 – UML Class Diagram
+- Designed core domain models such as `Student`, `Course`, `Lecturer`, `PerformanceReport`.
+- Learned how to translate real-world educational concepts into class-based object-oriented structures.
+
+### Assignment 4 – Creational Design Patterns
+- Implemented six creational patterns: Simple Factory, Factory Method, Abstract Factory, Builder, Prototype, Singleton.
+- Gained a deeper understanding of design pattern purposes and real-world application in Python.
+- Learned how to separate creation logic from usage for scalability.
+
+### Assignment 5 – Unit Testing and Coverage
+- Used `pytest` and `pytest-cov` to test creational patterns and class models.
+- Ensured all features were testable and measurable.
+- Learned how to structure tests per module and pattern.
+
+### Assignment 6 – Prediction Service Logic
+- Integrated dummy logic for student performance prediction.
+- Understood how to separate AI logic from structural models using service classes.
+
+### Assignment 7 – CSV/PDF Export Logic
+- Created export interfaces and used Factory Method to choose between formats.
+- Learned how to work with external data formats programmatically.
+
+### Assignment 8 – Prototype Cloning
+- Implemented `.clone()` methods using deep/shallow copy logic.
+- Gained insight into object replication needs in AI/ML workflows.
+
+### Assignment 9 – Singleton Database Connection
+- Designed a `DatabaseConnection` Singleton to control database access.
+- Understood the importance of avoiding multiple DB connections.
+
+### Assignment 10 – Integration and Demo File
+- Created a `run_example.py` script to showcase system flow from profile building to prediction.
+- Refactored and connected various modules.
+
+### Assignment 11 – Repository Layer
+- Built `IRepository`, `IStudentRepository`, and in-memory implementations using HashMap.
+- Introduced `RepositoryFactory` to abstract implementation details.
+- Faced errors related to missing packages and folder structure, such as:
+  - `ModuleNotFoundError: No module named 'repositories.inmemory'`
+- Learned how to organize Python packages and fix import paths.
+
+### Assignment 12 – Service Layer and REST API
+- Added service layer between logic and repository for better separation of concerns.
+- Built RESTful API using FastAPI and tested Swagger documentation.
+- Gained practical experience with API development and documentation tools.
+
+---
+
+## ⚠️ Challenges Encountered
+
+- **Import errors** due to incorrect folder structure or missing `__init__.py` files.
+- **Test failures** from unresolved module paths and structure inconsistencies.
+- **Tooling issues** such as missing `.vscode/settings.json` or lack of clear instructions for running the project.
+- **Python version inconsistencies** (e.g., using Python 3.13 caused some unexpected import issues).
+
+---
+
+## 🧠 Key Learnings
+
+- Mastered Python OOP fundamentals, especially design patterns and modular design.
+- Learned to test and measure code quality early using `pytest` and coverage tools.
+- Understood how to abstract infrastructure using repositories and services.
+- Built confidence with FastAPI and documenting APIs with Swagger.
+- Developed strong troubleshooting skills by debugging path and import issues.
+
+---
+
+## ✅ Current Status
+
+- Project structure is complete through Assignment 12.
+- Core logic and patterns are implemented.
+- Unit tests exist but are currently **not passing** due to unresolved path issues (see `README.md`).
+- Ready for final debugging and polish phase.
+
+---

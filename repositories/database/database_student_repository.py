@@ -1,22 +1,17 @@
 # repositories/database/database_student_repository.py
 
-class DatabaseStudentRepository:
-    def __init__(self):
-        # In the future, this would connect to a real database
-        pass
+from repositories.student_repository import StudentRepository
+from domain.student import Student
 
-    def save(self, student):
-        # Save student to database (stubbed)
-        pass
+class DatabaseStudentRepository(StudentRepository):
+    def save(self, entity: Student) -> None:
+        raise NotImplementedError
 
-    def find_by_id(self, student_id):
-        # Find student in database (stubbed)
-        pass
+    def find_by_id(self, id: str) -> Student:
+        raise NotImplementedError
 
-    def find_all(self):
-        # Return all students (stubbed)
-        return []
+    def find_all(self) -> list[Student]:
+        raise NotImplementedError
 
-    def delete(self, student_id):
-        # Delete student in database (stubbed)
-        pass
+    def delete(self, id: str) -> None:
+        raise NotImplementedError

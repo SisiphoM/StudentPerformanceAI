@@ -7,6 +7,95 @@ This system predicts students' academic performance using AI and supports educat
 An AI-driven system designed to predict academic performance and assist educators with early intervention strategies. This project combines full object-oriented modeling, creational design patterns, repository persistence, Agile GitHub project management, and comprehensive documentation.
 
 ---
+## ✅ Project Objectives
+
+- Predict student performance using AI/ML models.
+- Allow services to access, create, and update student data.
+- Abstract persistence logic for future-proofed storage.
+- Provide a RESTful API with clear documentation using Swagger.
+
+---
+## 🧱 System Architecture
+
+- `Domain Layer`: Contains entity models and core logic.
+- `Repository Layer`: Abstracted data storage with in-memory implementation.
+- `Service Layer`: Business logic handling prediction, CRUD operations.
+- `API Layer`: FastAPI app exposing endpoints.
+- `Tests`: Unit tests with Pytest.
+
+---
+
+## 📦 Modules Implemented
+
+- `Assignment 3`: Domain models
+- `Assignment 4`: Use cases
+- `Assignment 6`: Interfaces and persistence
+- `Assignment 10`: Creational design patterns
+- `Assignment 11`: Repository abstraction using Factory Pattern
+- `Assignment 12`: Service layer and FastAPI REST API
+
+---
+
+## 🧩 Design Patterns Used
+
+- Simple Factory
+- Factory Method
+- Abstract Factory
+- Builder
+- Prototype
+- Singleton
+
+---
+
+## 📁 Directory Structure
+
+```bash
+StudentPerformanceAI/
+│
+├── domain/                         # Domain Layer
+│   └── models/
+│       └── student.py             # Core domain model
+│
+├── creational_patterns/           # Design Patterns (Assignment 4)
+│   ├── factory_method/
+│   ├── abstract_factory/
+│   ├── builder/
+│   ├── prototype/
+│   └── singleton/
+│
+├── repositories/                  # Persistence Layer
+│   ├── interfaces/                # Generic & specific interfaces
+│   │   └── student_repository_interface.py
+│   ├── inmemory/                  # In-memory implementations
+│   │   └── inmemory_student_repository.py
+│   └── database/                  # Placeholder for DB implementations
+│
+├── factories/                     # Factory for repository creation
+│   └── repository_factory.py
+│
+├── services/                      # Service Layer (Assignment 12)
+│   └── student_service.py
+│
+├── api/                           # FastAPI REST API (Assignment 12)
+│   └── main.py
+│
+├── tests/                         # Unit Tests (Assignment 5+)
+│   ├── test_student_model.py
+│   ├── test_inmemory_student_repository.py
+│   └── test_student_service.py
+│
+├── .vscode/
+│   └── settings.json              # VS Code Python settings
+│
+├── .env                           # Environment Variables (optional)
+├── run_example.py                 # Manual execution script
+├── requirements.txt               # Python dependencies
+├── README.md                      # Project documentation
+├── CHANGELOG.md                   # Version log
+└── reflection.md                  # Personal reflection
+
+
+---
 
 ## 📚 Table of Contents
 - [System Overview](#system-overview)
@@ -57,27 +146,6 @@ To automate, create a `.env` file containing:
 ```
 PYTHONPATH=.
 ```
-
----
-
-## 📁 Folder Structure
-```
-StudentPerformanceAI/
-├── src/models/                      # Domain Models
-├── creational_patterns/             # Design Pattern Implementations
-├── repositories/                    # Persistence Layer
-│   ├── inmemory/                    # In-Memory Storage
-│   ├── database/                    # Future-proof Database Storage
-├── factories/                       # Repository Factory
-├── tests/                           # Unit Tests
-├── run_example.py                   # Manual execution script
-├── README.md
-├── CHANGELOG.md
-├── .env
-├── .vscode/settings.json
-```
-
----
 
 ## 📚 Assignments Breakdown
 

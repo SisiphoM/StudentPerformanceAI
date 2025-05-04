@@ -1,36 +1,23 @@
-# tests/test_inmemory_student_repository.py
 import pytest
-from repositories.inmemory.inmemory_student_repository import InMemoryStudentRepository # type: ignore
-from src.models.student import Student
+from repositories.inmemory.inmemory_student_repository import InMemoryStudentRepository
+from domain.student import Student
 
-def test_save_and_find_student():
+def test_save_and_find():
     repo = InMemoryStudentRepository()
-    student = Student(student_id="1", name="Sisipho", email="sisipho@example.com")
-
+    student = Student(id="1", name="Alice", grade=85)
     repo.save(student)
-    retrieved = repo.find_by_id("1")
+    assert repo.find_by_id("1") == student
 
-    assert retrieved is not None
-    assert retrieved.name == "Sisipho"
-    assert retrieved.email == "sisipho@example.com"
-
-def test_find_all_students():
+def test_find_all():
     repo = InMemoryStudentRepository()
-    student1 = Student(student_id="1", name="Sisipho", email="sisipho@example.com")
-    student2 = Student(student_id="2", name="Luxolo", email="luxolo@example.com")
-
-    repo.save(student1)
-    repo.save(student2)
+    repo.save(Student(id="1", name="Alice", grade=85))
+    repo.save(Student(id="2", name="Bob", grade=90))
     all_students = repo.find_all()
-
     assert len(all_students) == 2
 
-def test_delete_student():
+def test_delete():
     repo = InMemoryStudentRepository()
-    student = Student(student_id="1", name="Sisipho", email="sisipho@example.com")
-
+    student = Student(id="1", name="Alice", grade=85)
     repo.save(student)
     repo.delete("1")
-    retrieved = repo.find_by_id("1")
-
-    assert retrieved is None
+    assert repo.find_by_id("1") is None
