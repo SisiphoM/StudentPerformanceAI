@@ -1,5 +1,4 @@
-import pytest
-from repositories.inmemory.inmemory_student_repository import InMemoryStudentRepository
+from src.repositories.inmemory.inmemory_student_repository import InMemoryStudentRepository # type: ignore
 from domain.student import Student
 
 def test_save_and_find():
