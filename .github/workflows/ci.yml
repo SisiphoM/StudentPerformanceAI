@@ -27,3 +27,31 @@ jobs:
     - name: Run tests with pytest
       run: |
         pytest
+  deploy:
+    needs: test
+    runs-on: windows-latest
+    if: github.ref == 'refs/heads/main'
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.11'
+
+    - name: Install dependencies
+      run: |
+        pip install -r requirements.txt
+
+    - name: Package project as zip artifact
+      run: |
+        mkdir dist
+        zip -r dist/StudentPerformanceAI.zip . -x "**/__pycache__/*"
+
+    - name: Upload Artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: student-performance-artifact
+        path: dist/StudentPerformanceAI.zip
