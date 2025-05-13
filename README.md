@@ -243,3 +243,13 @@ Cape Peninsula University of Technology
 - Added Repository Persistence Layer.
 - Integrated manual test cases.
 - Detailed README.md and project documentation.
+
+## 🚀 Running Tests Locally
+
+```bash
+# Setup (Windows):
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+pytest
+

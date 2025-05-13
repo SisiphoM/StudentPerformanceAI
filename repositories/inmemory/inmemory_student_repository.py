@@ -1,5 +1,5 @@
-from models.repositories.student_repository import StudentRepository
 from repositories.interfaces.student_repository_interface import StudentRepositoryInterface
+
 from domain.student import Student
 
 class InMemoryStudentRepository(StudentRepository):
