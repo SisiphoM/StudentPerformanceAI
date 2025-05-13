@@ -1,6 +1,6 @@
-from repositories.interfaces.student_repository_interface import StudentRepositoryInterface
 
 from domain.student import Student
+from repositories.student_repository import StudentRepository
 
 class InMemoryStudentRepository(StudentRepository):
     def __init__(self):
