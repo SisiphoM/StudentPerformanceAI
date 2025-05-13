@@ -1,7 +1,7 @@
  # 📘 README.md
 
 ## 🎓 Student Performance Prediction System
-[![.github/workflows/ci.yml](https://github.com/SisiphoM/StudentPerformanceAI/actions/workflows/ci.yml/badge.svg)](https://github.com/SisiphoM/StudentPerformanceAI/actions/workflows/ci.yml)
+[![CI - Run Tests](https://github.com/SisiphoM/StudentPerformanceAI/actions/workflows/ci.yml/badge.svg)](https://github.com/SisiphoM/StudentPerformanceAI/actions/workflows/ci.yml)
 This system predicts students' academic performance using AI and supports educators with smart insights. This version includes full object-oriented class models and implementations of six creational design patterns, backed by unit tests.
 
 An AI-driven system designed to predict academic performance and assist educators with early intervention strategies. This project combines full object-oriented modeling, creational design patterns, repository persistence, Agile GitHub project management, and comprehensive documentation.
